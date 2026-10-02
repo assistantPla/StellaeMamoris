@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const projects = [
-  { title: "Spring", note: "Aries-Taurus-Gemini" },
-  { title: "Summer", note: "Cancer-Leo-Virgo" },
-  { title: "Autumn", note: "Libra-Scorpio-Sagittarius" },
-  { title: "Winter", note: "Capricorn-Aquarius-Pisces" },
+  { title: "Spring", note: "Aries Taurus Gemini" },
+  { title: "Summer", note: "Cancer Leo Virgo" },
+  { title: "Autumn", note: "Libra Scorpio Sagittarius" },
+  { title: "Winter", note: "Capricorn Aquarius Pisces" },
 ];
 
 export default function WorkPage() {
