@@ -1,6 +1,6 @@
-# Signal — Next.js starter
+# StellaeMamoris
 
-A responsive single-page marketing site built with Next.js App Router and TypeScript.
+Fantasy project built with Next.js App Router and TypeScript.
 
 ## Run locally
 
