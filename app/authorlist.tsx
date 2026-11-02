@@ -95,7 +95,7 @@ const itemData = [
     },
     {
         img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25?auto=format&fit=crop&w=480&q=75',
-        title: 'Cortigo.',
+        title: 'Corgito.',
         author: '@username',
     },
     {

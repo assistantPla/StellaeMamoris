@@ -10,7 +10,7 @@ import { useState } from "react";
 const projects = [
   { title: "Spring", type: "เคล้าคนึงห์ · MosaiZ · ArsezinaZ", year: "2026", className: "luma", mark: "", note: "Aries-Taurus-Gemini" },
   { title: "Summer", type: "MOONETTE · FoxxTrot · NithiN", year: "2026", className: "sable", mark: "", note: "Cancer-Leo-Virgo" },
-  { title: "Autumn", type: "AME’REINA · Rabbit go’round · Cortigo.", year: "2026", className: "grid", mark: "", note: "Libra-Scorpio-Sagittarius" },
+  { title: "Autumn", type: "AME’REINA · Rabbit go’round · Corgito.", year: "2026", className: "grid", mark: "", note: "Libra-Scorpio-Sagittarius" },
   { title: "Winter", type: "Midnight Sun Syndrome · Ophilia Kim · Assistant P.", year: "2026", className: "aster", mark: "", note: "Capricorn-Aquarius-Pisces" },
 ];
 

@@ -32,7 +32,7 @@ const seasons = [
     name: "Autumn",
     thaiName: "ฤดูใบไม้ร่วง",
     image: "/photo/FALL-optimized.jpg",
-    book: "AME’REINA · Rabbit go’round · Cortigo.",
+    book: "AME’REINA · Rabbit go’round · Corgito.",
     signs: [
       { symbol: "♎", name: "Libra", dates: "23 Sep – 22 Oct" },
       { symbol: "♏", name: "Scorpio", dates: "23 Oct – 21 Nov" },
