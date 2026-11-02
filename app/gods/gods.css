@@ -1,0 +1,267 @@
+
+.gods-page {
+    --gods-blue: #145db4;
+}
+
+.gods-hero {
+    min-height: 530px;
+    padding: 68px 0 28px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--line);
+}
+
+.gods-hero .kicker {
+    color: var(--gods-blue);
+}
+
+.gods-hero-copy {
+    margin: auto 0;
+}
+
+.gods-hero h1 {
+    color: var(--gods-blue);
+    font-size: clamp(64px, 8vw, 112px);
+    font-weight: 500;
+    line-height: .91;
+    margin: 40px 0 22px;
+}
+
+.gods-hero h1 em {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+}
+
+.gods-hero-copy > p {
+    color: #536058;
+    font-size: 15px;
+    margin: 0;
+}
+
+.gods-hero-foot {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #66716a;
+    font: 10px 'DM Mono', monospace;
+}
+
+.gods-hero-foot a {
+    margin-left: auto;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--ink);
+    border-radius: 50%;
+    color: var(--ink);
+    font: 20px 'DM Sans', sans-serif;
+}
+
+.gods-index {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #7a817a;
+    font: 10px 'DM Mono', monospace;
+    writing-mode: vertical-rl;
+}
+
+.season-section {
+    padding-bottom: 78px;
+}
+
+.season-banner {
+    height: 265px;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background: #173959;
+}
+
+.season-banner > img,
+.season-banner-shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.season-banner > img {
+    object-fit: cover;
+    object-position: center 48%;
+}
+
+.season-banner-shade {
+    background: linear-gradient(90deg, rgba(10, 29, 48, .76), rgba(10, 29, 48, .13));
+}
+
+.season-banner-copy {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.season-banner .kicker {
+    color: rgba(255, 255, 255, .82);
+}
+
+.season-banner h2 {
+    font-size: clamp(42px, 5vw, 65px);
+    font-weight: 500;
+    line-height: 1;
+    margin: 13px 0 12px;
+}
+
+.season-book {
+    font: 11px 'DM Mono', monospace;
+    margin: 0;
+    color: rgba(255, 255, 255, .84);
+}
+
+.sign-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-bottom: 1px solid var(--line);
+}
+
+.sign-entry {
+    min-height: 128px;
+    display: grid;
+    grid-template-columns: 25px 40px minmax(0, 1fr) 20px;
+    align-items: center;
+    gap: 12px;
+    padding: 19px 18px 19px 0;
+    border-right: 1px solid var(--line);
+}
+
+.sign-entry + .sign-entry {
+    padding-left: 20px;
+}
+
+.sign-entry:last-child {
+    border-right: 0;
+}
+
+.sign-number {
+    align-self: start;
+    padding-top: 3px;
+    color: #778179;
+    font: 10px 'DM Mono', monospace;
+}
+
+.sign-symbol {
+    color: var(--gods-blue);
+    font: 33px 'DM Sans', sans-serif;
+    text-align: center;
+}
+
+.sign-entry h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+
+.sign-entry p {
+    color: #6d756e;
+    font: 10px 'DM Mono', monospace;
+    margin: 0;
+}
+
+.sign-arrow {
+    color: #758079;
+    font-size: 16px;
+}
+
+.gods-footer {
+    min-height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    color: #657068;
+    font: 10px 'DM Mono', monospace;
+}
+
+.gods-footer a:first-child {
+    color: var(--ink);
+}
+
+.gods-footer a:last-child {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+    .gods-hero {
+        min-height: 470px;
+        padding: 48px 0 21px;
+    }
+
+    .gods-hero h1 {
+        font-size: clamp(57px, 15vw, 82px);
+        margin: 35px 0 18px;
+    }
+
+    .gods-hero-copy > p {
+        max-width: 280px;
+        font-size: 14px;
+    }
+
+    .gods-index {
+        display: none;
+    }
+
+    .season-section {
+        padding-bottom: 52px;
+    }
+
+    .season-banner {
+        height: 220px;
+    }
+
+    .season-banner .wrap {
+        width: calc(100% - 34px);
+    }
+
+    .season-banner-shade {
+        background: linear-gradient(90deg, rgba(10, 29, 48, .78), rgba(10, 29, 48, .25));
+    }
+
+    .season-book {
+        max-width: 300px;
+        line-height: 1.6;
+    }
+
+    .sign-list {
+        grid-template-columns: 1fr;
+    }
+
+    .sign-entry,
+    .sign-entry + .sign-entry {
+        min-height: 91px;
+        padding: 12px 5px 12px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .sign-entry:last-child {
+        border-bottom: 0;
+    }
+
+    .gods-footer {
+        min-height: 100px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .gods-footer span {
+        order: 1;
+        width: 100%;
+    }
+}

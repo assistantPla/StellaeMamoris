@@ -2,15 +2,16 @@
 
 import Grid from "@mui/material/Grid";
 import Item from "@mui/material/Grid";
+import TitlebarBelowImageList from "./authorlist";
 import Link from "next/link";
 import { useState } from "react";
 
 
 const projects = [
-  { title: "Spring", type: "เคล้าคนึงห์ · MosaiZ · ArsezinaZ", year: "2024", className: "luma", mark: "", note: "Aries-Taurus-Gemini" },
-  { title: "Summer", type: "MOONETTE · FoxxTrot · NithiN", year: "2024", className: "sable", mark: "", note: "Cancer-Leo-Virgo" },
-  { title: "Autumn", type: "AME’REINA · Rabbit go’round · Cortigo.", year: "2023", className: "grid", mark: "", note: "Libra-Scorpio-Sagittarius" },
-  { title: "Winter", type: "Midnight Sun Syndrome · Ophilia Kim · Assistant P.", year: "2023", className: "aster", mark: "", note: "Capricorn-Aquarius-Pisces" },
+  { title: "Spring", type: "เคล้าคนึงห์ · MosaiZ · ArsezinaZ", year: "2026", className: "luma", mark: "", note: "Aries-Taurus-Gemini" },
+  { title: "Summer", type: "MOONETTE · FoxxTrot · NithiN", year: "2026", className: "sable", mark: "", note: "Cancer-Leo-Virgo" },
+  { title: "Autumn", type: "AME’REINA · Rabbit go’round · Cortigo.", year: "2026", className: "grid", mark: "", note: "Libra-Scorpio-Sagittarius" },
+  { title: "Winter", type: "Midnight Sun Syndrome · Ophilia Kim · Assistant P.", year: "2026", className: "aster", mark: "", note: "Capricorn-Aquarius-Pisces" },
 ];
 
 function Arrow() { return <span className="arrow" aria-hidden="true">↗</span>; }
@@ -40,8 +41,9 @@ export default function Home() {
       <a className="wordmark" href="#top" aria-label="Mira home">ABOUT <span>—</span> PROJECT</a>
       <nav className={menuOpen ? "nav open" : "nav"} aria-label="Primary navigation">
         <Link href="#work" onClick={() => setMenuOpen(false)}>Books</Link>
-        <Link href="#about" onClick={() => setMenuOpen(false)}>Authors</Link>
-        <Link href="#contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+        <Link href="#author" onClick={() => setMenuOpen(false)}>Authors</Link>
+        <Link href="#contact" onClick={() => setMenuOpen(true)}>Contact Us</Link>
+        <Link href="/gods" onClick={() => setMenuOpen(false)}>Gods</Link>
       </nav>
       <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle menu">{menuOpen ? "Close" : "Menu"}</button>
       {/* <span className="availability"><i /> Available for select projects</span> */}
@@ -67,18 +69,14 @@ export default function Home() {
       </nav> */}
     </section>
 
-    <section className="about" id="about">
-      {/* <div className="wrap about-inner">
-        <p className="kicker">A little about me</p>
-        <div className="about-copy">
-          <h2>Good design starts<br />with a <em>good question.</em></h2>
-          <div>
-            <p>I’m Mira, an independent designer working across identity, web, and art direction. I partner with founders and teams who care about the details—and know that clarity is a kind of generosity.</p><a className="underlink" href="#contact">More about the studio <Arrow />
-            </a></div></div><div className="portrait" aria-label="Abstract portrait illustration"><span className="sun" /><span className="face" /><span className="hair" /><span className="neck" /></div></div> */}
-
+    <section className="about" id="author">
+      <TitlebarBelowImageList />
     </section>
 
-    <section className="principles wrap"><p className="kicker">How I work</p><div className="principle-grid"><article><span>01</span><h3>Start with the why</h3><p>Every decision earns its place. We begin with what matters, then make it visible.</p></article><article><span>02</span><h3>Make room for play</h3><p>Rigor and intuition belong in the same room. The best ideas often arrive sideways.</p></article><article><span>03</span><h3>Leave a useful trail</h3><p>Systems should make the next good decision easier, long after the launch is over.</p></article></div></section>
+    <section className="principles wrap"><p className="kicker">How I work</p>
+      <div className="principle-grid"><article><span>01</span><h3>Start with the why</h3><p>Every decision earns its place. We begin with what matters, then make it visible.</p></article>
+        <article><span>02</span><h3>Make room for play</h3><p>Rigor and intuition belong in the same room. The best ideas often arrive sideways.</p></article>
+        <article><span>03</span><h3>Leave a useful trail</h3><p>Systems should make the next good decision easier, long after the launch is over.</p></article></div></section>
 
 
 
@@ -88,14 +86,14 @@ export default function Home() {
 
       <Grid size={8}>
         <Item style={{ display: "flex", gap: 5, paddingTop: 10 }}>
-          <button className="email-link" onClick={() => { setSent(true); window.location.href = "mailto:hello@mirastudio.co"; }} style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
+          <button className="email-link" onClick={() => { setSent(true); window.location.href = ""; }} style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
             <XIcon />
             <span>@YaihenHouse</span>
-          </button>{sent && <p className="sent">Your email app should be ready.</p>}
+          </button>
           <button className="email-link" onClick={() => { setSent(true); window.location.href = "https://facebook.com"; }} style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
             <FacebookIcon />
             <span>Yaihen House</span>
-          </button>{sent && <p className="sent">Your email app should be ready.</p>}
+          </button>
         </Item>
       </Grid>
 

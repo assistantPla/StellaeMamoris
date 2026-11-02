@@ -4,7 +4,7 @@
 :root {
     --ink: #18251e;
     --paper: #f2f0e9;
-    --orange: #81a8f1;
+    --blue: #60a8f0;
     --line: #cbc9c0;
     --font-body: 'Prompt', 'DM Sans', Arial, sans-serif
 }
@@ -58,7 +58,7 @@ a {
 }
 
 .wordmark span {
-    color: var(--orange);
+    color: var(--blue);
     margin: 0 2px
 }
 
@@ -75,7 +75,7 @@ a {
 }
 
 .nav a:hover {
-    color: var(--orange)
+    color: var(--blue)
 }
 
 .availability {
@@ -246,7 +246,7 @@ a {
 
 .luma .project-art {
     /* background: #475f3a; */
-    /* background-image: url('/photo/Spring.png'); */
+    background-image: url('/photo/Spring-optimized.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -267,7 +267,7 @@ a {
 }
 
 .sable .project-art {
-    /* background-image: url('/photo/Summer.png'); */
+    background-image: url('/photo/Summer-optimized.jpg');
     background-size: cover;
     background-position: center;
     color: #e6d7bc
@@ -289,7 +289,7 @@ a {
 }
 
 .grid .project-art {
-    /* background-image: url('/photo/FALL.png'); */
+    background-image: url('/photo/FALL-optimized.jpg');
     background-size: cover;
     background-position: center;
     color: #1e2b24
@@ -310,7 +310,7 @@ a {
 }
 
 .aster .project-art {
-    /* background-image: url('/photo/Winter.png'); */
+    background-image: url('/photo/Winter-optimized.jpg');
     background-size: cover;
     background-position: center;
     color: #5e4136
@@ -355,8 +355,8 @@ a {
 }
 
 .about {
-    background: var(--ink);
-    color: #eeede6
+    /* background: var(--ink); */
+    color: #164ab2
 }
 
 .about-inner {
@@ -513,7 +513,7 @@ a {
 }
 
 .contact {
-    background: var(--orange);
+    background: var(--blue);
     color: #1f2c25
 }
 
@@ -524,7 +524,7 @@ a {
 }
 
 .contact .kicker {
-    color: #062b75
+    color: #051a45
 }
 
 .contact h2 {
