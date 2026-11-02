@@ -73,11 +73,11 @@ export default function Home() {
       <TitlebarBelowImageList />
     </section>
 
-    <section className="principles wrap"><p className="kicker">How I work</p>
+    {/* <section className="principles wrap"><p className="kicker">How I work</p>
       <div className="principle-grid"><article><span>01</span><h3>Start with the why</h3><p>Every decision earns its place. We begin with what matters, then make it visible.</p></article>
         <article><span>02</span><h3>Make room for play</h3><p>Rigor and intuition belong in the same room. The best ideas often arrive sideways.</p></article>
         <article><span>03</span><h3>Leave a useful trail</h3><p>Systems should make the next good decision easier, long after the launch is over.</p></article></div></section>
-
+ */}
 
 
     <section className="contact" id="contact"><div className="wrap contact-inner"><p className="kicker">Contact Us</p>
